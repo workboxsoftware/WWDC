@@ -164,7 +164,7 @@
             for (NSArray *array in daysArray) {
                 for (WDCParty *party in array) {
                     if ([[WDCParties sharedInstance].going indexOfObject:party.objectId] != NSNotFound) {
-                        [party shortDate];
+                        NSString *shortDate __unused = [party shortDate];
                         [filteredPartiesMutable addObject:party];
                     }
                 }
