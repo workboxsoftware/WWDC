@@ -4,7 +4,5 @@
 
 #import "JVObserver.h"
 #import "TUSafariActivity.h"
-#import "GAI.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
+#import "GAITrackedViewController.h"
 #import <Mixpanel/Mixpanel.h>

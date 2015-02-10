@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-@objc class WDCPartyWebViewController: UIViewController {
+@objc class WDCPartyWebViewController: GAITrackedViewController {
     var url: NSURL?
     var observer: JVObserver?
 
@@ -33,9 +33,7 @@ import WebKit
         super.viewDidLoad()
 
         // Google
-        let tracker = GAI.sharedInstance().defaultTracker
-        tracker.set(kGAIScreenName, value: "WDCPartyWebViewController")
-//        tracker.send(GAIDictionaryBuilder.createAppView().build() as! [NSObject : AnyObject])
+        screenName = "WDCPartyWebViewController"
 
         // load url
         webView.loadRequest(NSURLRequest(URL:url!))
